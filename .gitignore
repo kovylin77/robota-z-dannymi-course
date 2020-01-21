@@ -1,3 +1,6 @@
 bin/
 obj/
 /packages/
+.idea
+robota-z-dannymi/bin
+robota-z-dannymi/obj
