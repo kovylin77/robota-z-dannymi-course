@@ -32,7 +32,7 @@ namespace robota_z_dannymi
             
              // Задачa 2.1.3.6: Даны натуральные числа n и m. Получить все натуральные
              // числа, меньшие n, квадрат суммы цифр которых равен m
-             Console.WriteLine("**************************************");
+            Console.WriteLine("**************************************");
             Console.WriteLine("Following numbers are applicable:");
             int m = 324;
             int n = 1000;
@@ -43,6 +43,22 @@ namespace robota_z_dannymi
                     Console.Write($"{i}, ");
                 }
             }
+            
+            // Задача 4.1.1.6: Вывести двумерный массив в виде таблицы: четные элементы
+            // выводить на своем месте в таблице, прибавив к значению 1, нечетные
+            // - выводить пробелы вместо элемента.
+            Console.WriteLine("\r\n**************************************");
+            int[,] nums = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 } };
+            ArrayUtil.PrintSortedArrayAsTable(nums);
+            
+            // Задача 5.1.1: Написать метод, входными параметрами которого являются две
+            // строки. Метод должен вернуть 1, если в первой строке больше
+            // символов, 0, если в обеих строках равное количество символов, -1,
+            // если во второй строке меньше символов.
+            Console.WriteLine("\r\n**************************************");
+            Console.WriteLine($"First sentence is bigger: {StringComparator.CompareStrings("bigger sentence", "smaller")}");
+            Console.WriteLine($"First sentence is smaller: {StringComparator.CompareStrings("smaller", "bigger sentence")}");
+            Console.WriteLine($"Sentences are equal: {StringComparator.CompareStrings("equal", "equal")}");
         }
     }
 }
